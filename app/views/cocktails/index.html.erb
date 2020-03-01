@@ -11,6 +11,9 @@
 
 <ul>
   <% @cocktails.each do |cocktail| %>
-  <li><%= link_to cocktail.name, cocktail_path(cocktail) %></li>
+  <% if cocktail.photo.attached? %>
+    <%= cl_image_tag cocktail.photo.key, height: 300, width: 400, crop: :fill %>
+  <% end %>
+  <li><%= link_to cocktail.name, cocktail_path(cocktail) %> <%= link_to "Edit", edit_cocktail_path(cocktail) %></li>
   <% end %>
 </ul>
