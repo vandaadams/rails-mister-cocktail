@@ -1,0 +1,16 @@
+<h1>Cocktails</h1>
+<%= link_to "Add a new cocktail", new_cocktail_path %>
+
+<%= form_tag cocktails_path, method: :get do %>
+  <%= text_field_tag :query,
+    params[:query],
+    placeholder: "Find a cocktail"
+  %>
+  <%= submit_tag "Search" %>
+<% end %>
+
+<ul>
+  <% @cocktails.each do |cocktail| %>
+  <li><%= link_to cocktail.name, cocktail_path(cocktail) %></li>
+  <% end %>
+</ul>
