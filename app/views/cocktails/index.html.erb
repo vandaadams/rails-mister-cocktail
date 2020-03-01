@@ -1,19 +1,24 @@
-<h1>Cocktails</h1>
-<%= link_to "Add a new cocktail", new_cocktail_path %>
+<div class="banner" style="background-image: url(<%= image_path "background.jpg" %>);">
+</div>
 
-<%= form_tag cocktails_path, method: :get do %>
-  <%= text_field_tag :query,
-    params[:query],
-    placeholder: "Find a cocktail"
-  %>
-  <%= submit_tag "Search" %>
-<% end %>
-
-<ul>
-  <% @cocktails.each do |cocktail| %>
-  <% if cocktail.photo.attached? %>
-    <%= cl_image_tag cocktail.photo.key, height: 300, width: 400, crop: :fill %>
-  <% end %>
-  <li><%= link_to cocktail.name, cocktail_path(cocktail) %> <%= link_to "Edit", edit_cocktail_path(cocktail) %></li>
-  <% end %>
-</ul>
+  <div class="seach-bar">
+    <%= form_tag cocktails_path, method: :get do %>
+      <%= text_field_tag :query,
+        params[:query],
+        placeholder: "Find a cocktail"
+      %>
+      <%= submit_tag "Search" %>
+    <% end %>
+  </div>
+<div class="container">
+  <div class="cocktail-cards">
+    <ul>
+      <% @cocktails.each do |cocktail| %>
+      <% if cocktail.photo.attached? %>
+        <%= cl_image_tag cocktail.photo.key, height: 300, width: 400, crop: :fill %>
+      <% end %>
+      <li><%= link_to cocktail.name, cocktail_path(cocktail) %></li>
+      <% end %>
+    </ul>
+  </div>
+</div>

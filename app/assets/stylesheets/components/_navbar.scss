@@ -1,12 +1,23 @@
-.navbar-lewagon {
+.navbar {
+  margin: 0 auto;
+  display: flex;
   justify-content: space-between;
-  background: white;
+  background-color: transparent;
 }
 
-.navbar-lewagon .navbar-collapse {
-  flex-grow: 0;
+.navbar-link {
+  margin: 15px;
+  text-decoration: none;
+  color: $light-orange;
+  &:hover {
+    transition: 0.15s;
+    text-decoration: none;
+    color: $orange;
+  }
 }
 
-.navbar-lewagon .navbar-brand img {
-  width: 40px;
+.navbar-logo {
+  margin-left: 15px;
+  font-size: 32px;
+  color: $light-orange;
 }

@@ -1,1 +1,18 @@
 // Specific CSS for your home-page
+body {
+  background-color: $gray;
+}
+
+.banner {
+  text-align: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 105vh;
+  margin-top: -105px;
+}
+
+.search-bar {
+  max-width: 400px;
+  background-color: transparent;
+  color: $light-orange;
+}
