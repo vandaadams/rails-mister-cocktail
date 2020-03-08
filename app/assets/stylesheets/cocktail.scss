@@ -3,18 +3,19 @@
 // You can use Sass (SCSS) here: https://sass-lang.com/
 .show-container {
   margin: 50px 100px;
-  padding: 24px;
   border-radius: 4px;
   display: flex;
   background-color: $font;
   color: $base;
 }
 
-.cocktail-show-left {
-
+.cocktail-show-left img {
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
 }
 
 .cocktail-show-right {
+  margin-top: 48px;
   margin-left: 48px;
 }
 
@@ -30,6 +31,10 @@
 
 i {
   color: $orange;
+  opacity: 0.7;
+  &:hover {
+    opacity: 1;
+  }
 }
 
 .new-btn {
@@ -38,8 +43,8 @@ i {
   border-radius: 4px;
   opacity: 0.7;
   &:hover {
-  text-decoration: none;
-  color: $orange;
-  opacity: 1;
+    text-decoration: none;
+    color: $orange;
+    opacity: 1;
   }
 }

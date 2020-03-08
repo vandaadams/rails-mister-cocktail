@@ -13,31 +13,33 @@ body {
 }
 
 .search-bar {
-  width: 50vw;
   text-align: center;
   font-size: 16px;
-  background-color: $orange;
-  border-radius: 4px;
-  padding: 10px;
-  margin: 0 auto;
+  color: $font;
 }
 
 .search-field {
-  width: 75%;
   background-color: transparent;
-  color: $base;
   border: none;
   outline: none;
+  font-size: 24px;
+  color: $font;
 }
 
 input {
-  color: $base;
+  font-size: 24px;
+  color: $font;
 }
+
+.fa-fw {
+  width: 1em;
+}
+
 
 .search-btn {
   background-color: transparent;
   border: none;
-  color: $base;
+  color: $font;
   opacity: 0.7;
   &:hover {
   opacity: 1;

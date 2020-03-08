@@ -1,3 +1,27 @@
 // Place all the styles related to the Doses controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+.new-container {
+  margin: 0 auto;
+  width: 50%;
+  background-color: $light-orange;
+  color: $base;
+  padding: 24px;
+  border-radius: 4px;
+}
+
+.new-container input {
+  font-size: 16px;
+  border-radius: 4px;
+}
+
+.simple_form .btn {
+  width: 100%;
+  color: $base;
+  opacity: 0.8;
+  &:hover {
+    opacity: 1;
+  }
+}
+
+
