@@ -9,12 +9,12 @@
 .fas {
   font-size: 26px;
   text-decoration: none;
-  color: $light-orange;
+  color: #E3C1B2;
   opacity: 1;
   &:hover {
     transition: 0.15s;
     text-decoration: none;
-    color: $orange;
+    color: #D69176;
   }
 }
 
@@ -23,14 +23,14 @@
   padding: 8px 16px;
   font-size: 16px;
   text-decoration: none;
-  color: $light-orange;
-  border: 1px solid $light-orange;
+  color: #E3C1B2;
+  border: 1px solid #E3C1B2;
   &:hover {
     transition: 0.15s;
     text-decoration: none;
     opacity: 1;
-    background-color: $light-orange;
-    border: 2px solid $light-orange;
-    color: $base;
+    background-color: #E3C1B2;
+    border: 2px solid #E3C1B2;
+    color: #0B3338;
   }
 }

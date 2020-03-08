@@ -5,7 +5,7 @@
 }
 
 .cocktail-card {
-  background-color: $light-orange;
+  background-color: #E3C1B2;
   text-align: center;
   padding-top: 32px;
   border-radius: 4px;
@@ -13,13 +13,13 @@
 
 .cocktail-card a {
   text-decoration: none;
-  text-shadow: 2px 1px 0px $font;
+  text-shadow: 2px 1px 0px #E5E1D8;
   font-size: 20px;
-  color: $base;
+  color: #0B3338;
   opacity: 0.7;
   &:hover {
     text-decoration: none;
-    color: $base;
+    color: #0B3338;
     opacity: 1;
   }
 }

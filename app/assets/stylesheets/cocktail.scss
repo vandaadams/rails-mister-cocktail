@@ -6,7 +6,7 @@
   border-radius: 4px;
   display: flex;
   background-color: #E5E1D8;
-  color: $base;
+  color: #0B3338;
 }
 
 .cocktail-show-left img {
@@ -29,7 +29,7 @@
 }
 
 i {
-  color: $orange;
+  color: #D69176;
   opacity: 0.7;
   &:hover {
     opacity: 1;
@@ -38,12 +38,12 @@ i {
 
 .new-btn {
   text-decoration: none;
-  color: $orange;
+  color: #D69176;
   border-radius: 4px;
   opacity: 0.7;
   &:hover {
     text-decoration: none;
-    color: $orange;
+    color: #D69176;
     opacity: 1;
   }
 }
