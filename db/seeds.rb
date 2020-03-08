@@ -17,13 +17,10 @@ url = 'https://www.thecocktaildb.com/api/json/v1/1/list.php?i=list'
 buffer = open(url).read
 result = JSON.parse(buffer)
 
-
 result.each do |ingredient|
   ingredient[1].each do |i|
-    ingredients = Ingredient.create!(name: "#{i.values.join('')}")
-    p ingredients
+    Ingredient.create!(name: "#{i.values.join('')}")
   end
-  # Ingredient.create!(name: "#{ingredient['strIngredient1']}")
 end
 
 # Ingredient.create!(name: "lemon")
