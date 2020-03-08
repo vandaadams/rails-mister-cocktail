@@ -12,7 +12,7 @@
     <% @cocktails.each do |cocktail| %>
     <div class="cocktail-card">
       <% if cocktail.photo.attached? %>
-        <%= cl_image_tag cocktail.photo.key, height: 200, width: 200, crop: :fill %>
+        <%= cl_image_tag cocktail.photo.key, height: 250, width: 250, crop: :fill %>
       <% end %>
       <p><%= link_to cocktail.name, cocktail_path(cocktail) %></p>
     </div>
