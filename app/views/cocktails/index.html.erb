@@ -1,24 +1,22 @@
-<div class="banner" style="background-image: url(<%= image_path "background.jpg" %>);">
+<div class="banner" style="background-image: url(<%= image_path "background.png" %>);">
 </div>
+<div class="container mb-5">
+  <div class="search-bar mb-5">
+    <form action="/cocktails" accept-charset="UTF-8" method="get">
+      <input class="search-field" type="text" name="query" id="query" placeholder="Find a cocktail">
+      <input class="search-btn" type="submit" name="commit" value="Search" data-disable-with="Search">
+    </form>
+  </div>
 
-  <div class="seach-bar">
-    <%= form_tag cocktails_path, method: :get do %>
-      <%= text_field_tag :query,
-        params[:query],
-        placeholder: "Find a cocktail"
-      %>
-      <%= submit_tag "Search" %>
+  <div class="cocktail-cards">
+    <% @cocktails.each do |cocktail| %>
+    <div class="cocktail-card">
+      <% if cocktail.photo.attached? %>
+        <%= cl_image_tag cocktail.photo.key, height: 200, width: 200, crop: :fill %>
+      <% end %>
+      <p><%= link_to cocktail.name, cocktail_path(cocktail) %></p>
+    </div>
     <% end %>
   </div>
-<div class="container">
-  <div class="cocktail-cards">
-    <ul>
-      <% @cocktails.each do |cocktail| %>
-      <% if cocktail.photo.attached? %>
-        <%= cl_image_tag cocktail.photo.key, height: 300, width: 400, crop: :fill %>
-      <% end %>
-      <li><%= link_to cocktail.name, cocktail_path(cocktail) %></li>
-      <% end %>
-    </ul>
-  </div>
 </div>
+

@@ -1,3 +1,45 @@
 // Place all the styles related to the Cocktail controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+.show-container {
+  margin: 50px 100px;
+  padding: 24px;
+  border-radius: 4px;
+  display: flex;
+  background-color: $font;
+  color: $base;
+}
+
+.cocktail-show-left {
+
+}
+
+.cocktail-show-right {
+  margin-left: 48px;
+}
+
+.cocktail-name {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.cocktail-name i {
+  margin-left: 16px;
+  font-size: 24px;
+}
+
+i {
+  color: $orange;
+}
+
+.new-btn {
+  text-decoration: none;
+  color: $orange;
+  border-radius: 4px;
+  opacity: 0.7;
+  &:hover {
+  text-decoration: none;
+  color: $orange;
+  opacity: 1;
+  }
+}

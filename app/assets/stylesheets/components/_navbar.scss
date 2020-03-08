@@ -1,12 +1,13 @@
 .navbar {
   margin: 0 auto;
+  padding: 16px;
   display: flex;
   justify-content: space-between;
   background-color: transparent;
 }
 
 .navbar-link {
-  margin: 15px;
+  font-size: 26px;
   text-decoration: none;
   color: $light-orange;
   &:hover {
@@ -16,8 +17,19 @@
   }
 }
 
-.navbar-logo {
-  margin-left: 15px;
-  font-size: 32px;
+.navbar-btn {
+  border-radius: 4px;
+  padding: 8px 16px;
+  font-size: 16px;
+  text-decoration: none;
   color: $light-orange;
+  border: 1px solid $light-orange;
+  &:hover {
+    transition: 0.15s;
+    text-decoration: none;
+    opacity: 1;
+    background-color: $light-orange;
+    border: 2px solid $light-orange;
+    color: $base;
+  }
 }
