@@ -1,24 +1,3 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Mister Cocktail was the fist end to end product that we built during the bootcamp. It is a cocktail listing platform, where users can create their own cocktails, or add ingredients to existing ones. I used Le Wagon's API to create a list of ingredients for users to choose from.
